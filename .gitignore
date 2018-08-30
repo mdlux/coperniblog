@@ -1,5 +1,6 @@
 env/
 *.pyc
+*.db
 project.db
 blog/project.db
 .idea/
