@@ -20,7 +20,9 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     url(r'^admin/', include(admin.site.urls)),  # NOQA
     url(r'^', include('cms.urls')),
+    url(r'^taggit_suggest/', include('taggit_autosuggest.urls')),
 )
+
 
 # This is only needed when using runserver.
 if settings.DEBUG:
